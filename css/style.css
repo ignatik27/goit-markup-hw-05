@@ -783,10 +783,16 @@ footer {
     border-radius: 4px;
 }
 .modal-close-button {
-width: 30px;
-height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
-border-radius: 50%;
-background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-color: var(--title-text-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
 }
