@@ -29,7 +29,7 @@ footer {
     background-color: #2F303A;
 }
 
-/*утилиты*/
+                                    /*-----------------утилиты------------------*/
 
 .list {
     padding: 0;
@@ -63,7 +63,8 @@ footer {
 
 
 
-/*header*/
+                                    /*-------------------header---------------------*/
+
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -71,7 +72,7 @@ footer {
     display: flex;
 }
 
-/*logo*/
+                                        /*--------------logo---------------*/
 
 .logo {
     font-family: 'Raleway';
@@ -87,7 +88,7 @@ footer {
 
 /*main-nav*/
 
-/*header-sitenav*/
+                                 /*-------------------header-sitenav---------------------*/
 
 .header-nav {
     
@@ -97,43 +98,36 @@ footer {
 
 .header-sitenav {
     display: block;
-
-    position: relative;
-
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 0;
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-sitenav:hover,
 .header-sitenav:focus {
     color: var(--primary-bg-color)
 }
-.header-sitenav::after {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    content: '';
+.header-nav-link {
     display: block;
-    width: 100%;
-    height: 5px;
-    background-color: #2196F3;
-    border-radius: 2px;
 
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
-.header-sitenav:hover::after,
-.header-sitenav:focus::after {
-    opacity: 1;
+.current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-bg-color);
+    border-radius: 2px;
 }
 .sitenav {
     display: flex;
@@ -154,7 +148,7 @@ footer {
     color: var(--primary-bg-color);
 }
 
-/*header-mail*/
+                                        /*------------------header-mail--------------------*/
 
 .mail {
     display: flex;
@@ -197,7 +191,7 @@ footer {
     fill: currentColor;
 }
 
-/*hero*/
+                                         /*-------------------hero----------------------*/
 
 .hero {
     padding-top: 200px;
@@ -257,7 +251,7 @@ footer {
 }
 
 
-/*преимущества*/
+                                    /*--------------------преимущества-------------------------*/
 
 .benefits {
     padding-bottom: 0;
@@ -308,7 +302,7 @@ footer {
     color: var(--accent-text-color)
 }
 
-/*работа*/
+                                          /*--------------работа---------------*/
 
 
 
@@ -346,7 +340,8 @@ footer {
     margin-right: 0;
 }
 
-/*команда*/
+
+                                    /*------------------------команда-------------------------*/
 
 
 .team {
@@ -493,7 +488,7 @@ footer {
 
 
 
-/*подвал*/
+                                         /*---------------------подвал----------------------*/
 
 .footer-web {
     padding-top: 60px;
@@ -616,7 +611,8 @@ footer {
 
 
 
-/*portfolio-hero*/
+                                    /*------------------------portfolio-hero-----------------------*/
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -691,8 +687,6 @@ footer {
     margin-bottom: 30px;
 }
 .portfolio-soc-img {
-    position: relative;
-    overflow: hidden;
     display: block;
 }
 .portfolio-soc-img:hover,
@@ -700,32 +694,28 @@ footer {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/*overlay*/
+                                        /*-----------------overlay-------------------*/
 
 .portfolio-overlay {
-    position: absolute;
-    content: '';
-    top: 0;
-
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    padding: 63px 24px;
-    transform: translateY(100%);
-
-    background-color: rgba(33, 150, 243, 0.9);
-
-    transition: transform 250ms;
-}
-.portfolio-img:hover .portfolio-overlay {
-    transform: translateY(0);
+    position: relative;
+    overflow: hidden;
 }
 .portfolio-overlay-text {
     position: absolute;
-    width: 322px;
-    height: 168px;
-
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms;
+}
+.portfolio-img:hover .portfolio-overlay-text {
+    transform: translateY(0);
+}
+.portfolio-overlay-text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -735,7 +725,7 @@ footer {
     color: var(--title-text-color)
 }
 
-/*porfolio-text*/
+                                       /*---------------------porfolio-text--------------------*/
 
 
 .portfolio-text {
@@ -766,8 +756,7 @@ footer {
 }
 
 
-/*modal*/
-
+                                       /*---------------------/*modal----------------------*/
 .backdrop {
     position: fixed;
     top: 0;
