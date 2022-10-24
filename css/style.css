@@ -352,7 +352,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    bottom: 0;
     width: 370px;
     height: 70px;
     
