@@ -108,8 +108,7 @@ footer {
     line-height: 1.15;
     color: var(--primary-text-color);
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-sitenav:hover,
 .header-sitenav:focus {
@@ -182,8 +181,7 @@ footer {
     line-height: 1.15;
     color: var(--accent-text-color);
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:focus {
@@ -456,11 +454,11 @@ footer {
     width: 100%;
     height: 100%;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-soc-icon {
     fill: #AFB1B8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-soc-link:hover {
     background-color: #2196F3;
@@ -509,7 +507,7 @@ footer {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-soc-list:hover {
     color: #2196F3;
@@ -553,7 +551,7 @@ footer {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address:hover,
 .footer-address:focus {
@@ -568,7 +566,7 @@ footer {
     font-size: 14px;
     line-height: 1.15;
     color: var(--accent-text-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-mail:hover,
 .footer-mail:focus {
@@ -582,7 +580,7 @@ footer {
     font-size: 14px;
     line-height: 1.15;
     color: var(--accent-text-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-tel:hover,
 .footer-tel:focus {
@@ -631,7 +629,7 @@ footer {
     border-radius: 50%;
 
     background: rgba(255, 255, 255, 0.1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover {
     background-color: #2196F3;
@@ -693,15 +691,17 @@ footer {
     border: none;
     letter-spacing: 0.03em;
     color: #212121;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     cursor: pointer;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
-    background: #2196F3;
+    background-color: #2196F3;
     color: #FFFFFF;
+    transition: box-shadow 250ms, background-color 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .portfolio-img-list {
     padding: 0;
@@ -723,7 +723,7 @@ footer {
 }
 .portfolio-soc-img {
     display: block;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-soc-img:hover,
 .portfolio-soc-img:focus {
